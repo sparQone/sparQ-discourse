@@ -98,8 +98,15 @@
   color: var(--primary);
   border: none;
 
+  .d-icon {
+    display: none;
+  }
+
   &:hover {
-    background: var(--primary-very-low);
+    background: transparent !important;
+    color: var(--primary-high);
+    box-shadow: none !important;
+    border-radius: 0 !important;
   }
 }
 
