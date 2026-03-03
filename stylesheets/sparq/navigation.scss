@@ -5,6 +5,15 @@
   margin: 0 auto;
 }
 
+// List controls — prevent clipping active pill
+.list-controls {
+  overflow: visible;
+
+  .nav-pills {
+    overflow: visible;
+  }
+}
+
 // Nav pills
 .nav-pills > li > a.active,
 .nav-pills > li > a:hover {
