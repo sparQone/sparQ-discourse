@@ -1,0 +1,35 @@
+// sparq/navigation.scss — Nav pills, breadcrumbs, filters
+
+.navigation-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+// Nav pills
+.nav-pills > li > a.active,
+.nav-pills > li > a:hover {
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  border-radius: var(--sparq-radius-md);
+}
+
+#navigation-bar .nav-pills > li > a {
+  border-radius: var(--sparq-radius-md);
+}
+
+// Breadcrumbs
+.category-breadcrumb {
+  li .badge-category {
+    font-weight: 500;
+  }
+}
+
+// Tag filter pills
+.discourse-tags .discourse-tag {
+  border-radius: var(--sparq-radius-sm);
+}
+
+// Period chooser
+.period-chooser .btn {
+  border-radius: var(--sparq-radius-md);
+}

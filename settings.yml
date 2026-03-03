@@ -1,0 +1,17 @@
+sparq_logo:
+  type: upload
+  default: ""
+  description:
+    en: "Upload the sparQ logo for the header"
+
+show_footer:
+  type: bool
+  default: true
+  description:
+    en: "Show the sparQ branded footer with links to sparqone.com"
+
+footer_copyright:
+  type: string
+  default: "2025-2026 remarQable LLC"
+  description:
+    en: "Copyright text displayed in the footer"

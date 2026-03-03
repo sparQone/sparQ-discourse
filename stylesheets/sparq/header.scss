@@ -1,0 +1,71 @@
+// sparq/header.scss — Clean white header with border-bottom
+// Mirrors: www navbar — white bg, 1100px container, subtle border, logo left
+//   .navbar { background: var(--bg); padding: 0.75rem 0 }
+//   .navbar .container { border-bottom: 1px solid var(--border); padding-bottom: 0.75rem }
+
+.d-header-wrap .d-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--sparq-border);
+}
+
+.d-header .wrap {
+  max-width: 1100px;
+}
+
+// sparQ wordmark (text styled via api-initializer sparq-wordmark.js)
+.d-header .title a {
+  font-weight: 300;
+  font-size: 2em;
+  letter-spacing: -0.3px;
+  color: #454545;
+}
+
+.d-header .title a .sparq-q {
+  color: #9333ea;
+  font-weight: 500;
+}
+
+// Admin-uploaded logo sizing
+.d-header #site-logo,
+.d-header .logo-big {
+  height: 32px;
+  width: auto;
+}
+
+// Sign-up button — matches www .nav-pill (#dbeafe bg, #2563eb text, pill shape)
+.d-header .sign-up-button {
+  background: #dbeafe !important;
+  color: #2563eb !important;
+  border: none;
+  border-radius: 999px;
+  padding: 0.25rem 0.85rem;
+  font-size: var(--font-down-1);
+  transition: background 0.15s ease;
+
+  &:hover {
+    background: #bfdbfe !important;
+  }
+}
+
+// Log-in button — subtle, no bg
+.d-header .login-button {
+  background: transparent;
+  color: var(--primary);
+  border: none;
+
+  &:hover {
+    background: var(--primary-very-low);
+  }
+}
+
+// Header icons — softer hover
+.d-header .icon:hover,
+.d-header .btn-flat:hover {
+  background: var(--primary-very-low);
+  border-radius: var(--sparq-radius-md);
+}
+
+// Pill-shaped auth buttons
+.d-header .panel .auth-buttons .btn {
+  border-radius: 999px;
+}

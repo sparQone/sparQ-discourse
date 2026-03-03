@@ -1,0 +1,23 @@
+// sparq/alerts.scss — Alert and notice styling
+// Mirrors: www .wip-note and alert patterns
+
+.alert.alert-info {
+  background: var(--primary-very-low);
+  border: 1px solid var(--sparq-border);
+  border-radius: var(--sparq-radius-lg);
+}
+
+// Warning — matches www .wip-note { background: #fef3c7; border: 1px dashed var(--warning) }
+.alert.alert-warning {
+  background: #fef3c7;
+  border: 1px dashed var(--sparq-warning);
+  color: #92400e;
+  border-radius: var(--sparq-radius-lg);
+}
+
+// Error — matches www .no-subscription error styling
+.alert.alert-error {
+  background: #fef2f2;
+  border: 1px solid var(--danger);
+  border-radius: var(--sparq-radius-lg);
+}

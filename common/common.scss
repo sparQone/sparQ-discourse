@@ -1,0 +1,25 @@
+// sparQ Discourse Theme v3
+// Design system: sparq-base.css (shared/css/sparq-base.css)
+//
+// Color palette defined in about.json → "sparQ Light" color scheme.
+// Discourse auto-generates --primary-low through --primary-very-high
+// (and equivalents for secondary, tertiary, etc.) from those base colors.
+//
+// Load order mirrors the static sites:
+//   Bootstrap 5.3.2 → sparq-base.css → site main.css
+//   Discourse core   → color scheme   → this theme
+
+@import "sparq/variables";
+@import "sparq/typography";
+@import "sparq/layout";
+@import "sparq/header";
+@import "sparq/navigation";
+@import "sparq/buttons";
+@import "sparq/topic-list";
+@import "sparq/topic-post";
+@import "sparq/composer";
+@import "sparq/sidebar";
+@import "sparq/cards";
+@import "sparq/categories";
+@import "sparq/alerts";
+@import "sparq/footer";

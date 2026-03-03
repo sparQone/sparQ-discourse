@@ -1,0 +1,37 @@
+// sparq/footer.scss — Custom sparQ footer
+// Mirrors: www footer.html — centered, two rows of links, copyright
+//   Primary links: dark text, mx-2 spacing
+//   Secondary links: muted, small, mx-2 spacing
+//   Copyright: muted, small
+
+.sparq-footer {
+  border-top: 1px solid var(--sparq-border);
+  padding: 2rem 0;
+  margin-top: 2rem;
+  text-align: center;
+
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 0.5rem;
+
+    &:hover {
+      color: var(--tertiary);
+    }
+  }
+
+  .sparq-footer-secondary {
+    margin-top: 0.75rem;
+
+    a {
+      color: var(--sparq-text-muted);
+      font-size: var(--font-down-1);
+    }
+  }
+
+  .sparq-footer-copyright {
+    color: var(--sparq-text-muted);
+    font-size: var(--font-down-1);
+    margin-top: 0.75rem;
+  }
+}

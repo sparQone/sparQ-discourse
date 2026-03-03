@@ -1,0 +1,57 @@
+// sparq/cards.scss — User cards, modals, dropdowns, oneboxes
+// Mirrors: www .community-card (border, radius-lg, hover border-color transition)
+
+// Cards and modals
+.user-card,
+.group-card,
+.d-modal .modal-inner-container {
+  border-radius: var(--sparq-radius-lg);
+  border: 1px solid var(--sparq-border);
+}
+
+// Dropdown menus
+.menu-panel.drop-down {
+  border-radius: var(--sparq-radius-lg);
+  border: 1px solid var(--sparq-border);
+}
+
+// Badges and tags
+.badge-category-bg {
+  border-radius: var(--sparq-radius-sm);
+}
+
+.discourse-tag {
+  border-radius: var(--sparq-radius-sm);
+}
+
+.badge-wrapper.bullet span.badge-category {
+  font-weight: 500;
+}
+
+// Search results
+.search-menu .results {
+  border-radius: var(--sparq-radius-lg);
+}
+
+// Onebox (link previews) — border-color hover like www .community-card:hover
+aside.onebox {
+  border: 1px solid var(--sparq-border);
+  border-radius: var(--sparq-radius-lg);
+  box-shadow: none;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--tertiary);
+  }
+}
+
+// Notification panel
+.quick-access-panel {
+  border-radius: var(--sparq-radius-lg);
+}
+
+// Tooltips
+.d-tooltip .d-tooltip-content {
+  border-radius: var(--sparq-radius-md);
+  box-shadow: var(--sparq-shadow-md);
+}

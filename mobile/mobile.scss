@@ -1,0 +1,24 @@
+// sparQ — Mobile overrides
+
+// Tighter header
+.d-header-wrap .d-header {
+  padding: 0.5rem 0;
+}
+
+// Full-width cards
+.user-card,
+.group-card {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+// Compact topic list
+.topic-list .topic-list-item {
+  padding: 0.5rem 0;
+}
+
+// Composer flush to edges
+#reply-control {
+  border-radius: 0;
+}

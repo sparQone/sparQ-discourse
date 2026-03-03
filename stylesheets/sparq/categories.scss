@@ -1,0 +1,38 @@
+// sparq/categories.scss — Category page styling
+// Mirrors: www .community-card and the feature-card grid pattern
+//   .border.p-3.bg-white with strong title + muted description
+
+// Category boxes — card pattern matching www
+.category-list .category-box {
+  border-radius: var(--sparq-radius-lg);
+  border: 1px solid var(--sparq-border);
+  box-shadow: none;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--tertiary);
+  }
+
+  .category-box-inner {
+    padding: 1.25rem;
+  }
+}
+
+// Category name
+.category-list .category-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+// Category description — muted (like www .text-muted-custom.small)
+.category-list .category-description {
+  color: var(--sparq-text-muted);
+  font-size: var(--font-down-1);
+}
+
+// Subcategory pills
+.category-list .subcategories {
+  .subcategory {
+    border-radius: var(--sparq-radius-sm);
+  }
+}

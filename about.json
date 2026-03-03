@@ -1,0 +1,26 @@
+{
+  "name": "sparQ",
+  "about_url": "https://www.sparqone.com",
+  "license_url": "https://www.sparqone.com/license.html",
+  "authors": "remarQable LLC",
+  "theme_version": "3.0.0",
+  "minimum_discourse_version": "3.2.0",
+  "component": false,
+  "assets": {
+    "sparq-logo-dark": "assets/sparq-logo-dark.png"
+  },
+  "color_schemes": {
+    "sparQ Light": {
+      "primary":           "1a1a2e",
+      "secondary":         "ffffff",
+      "tertiary":          "3b82f6",
+      "quaternary":        "2563eb",
+      "header_background": "ffffff",
+      "header_primary":    "1a1a2e",
+      "highlight":         "dbeafe",
+      "danger":            "dc2626",
+      "success":           "10b981",
+      "love":              "dc2626"
+    }
+  }
+}

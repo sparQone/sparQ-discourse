@@ -1,0 +1,17 @@
+// sparq/sidebar.scss — Sidebar links and sections
+
+.sidebar-wrapper .sidebar-sections {
+  .sidebar-section-link:hover,
+  .sidebar-section-link.active {
+    background: var(--primary-very-low);
+    border-radius: var(--sparq-radius-md);
+  }
+
+  .sidebar-section-header-text {
+    font-weight: 600;
+    font-size: var(--font-down-1);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--sparq-text-muted);
+  }
+}

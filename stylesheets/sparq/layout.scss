@@ -1,0 +1,12 @@
+// sparq/layout.scss — Container max-width matching sparqone.com
+// www main.css: .container { max-width: 1100px }
+
+.wrap,
+#main-outlet-wrapper {
+  max-width: 1100px;
+}
+
+#main-outlet {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}

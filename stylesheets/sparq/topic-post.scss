@@ -1,0 +1,83 @@
+// sparq/topic-post.scss — Post content, code blocks, blockquotes
+// Mirrors: sparq-base.css code/pre + www content patterns
+
+// Topic title
+#topic-title .fancy-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+// Post body — generous line-height matching www body { line-height: 1.7 }
+.topic-body .cooked {
+  line-height: 1.7;
+}
+
+// Code blocks — matches sparq-base.css pre
+.topic-body .cooked pre {
+  background: var(--sparq-code-bg);
+  border-radius: var(--sparq-radius-md);
+  border: none;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+// Inline code — matches sparq-base.css code
+.topic-body .cooked code {
+  background: var(--sparq-code-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--sparq-radius-sm);
+  font-size: 0.875em;
+}
+
+.topic-body .cooked pre code {
+  background: none;
+  padding: 0;
+}
+
+// Blockquotes — accent left border (like www .border-start.border-4.border-accent)
+.topic-body .cooked blockquote {
+  border-left: 3px solid var(--tertiary);
+  background: var(--primary-very-low);
+  border-radius: 0 var(--sparq-radius-md) var(--sparq-radius-md) 0;
+  padding: 0.75rem 1rem;
+}
+
+// Post separator — clean 1px border (like www section border-bottom)
+.post-stream .topic-post {
+  border-bottom: 1px solid var(--sparq-border);
+}
+
+// Post action buttons — subtle hover
+nav.post-controls .actions button:hover,
+nav.post-controls .actions a:hover {
+  background: var(--primary-very-low);
+  border-radius: var(--sparq-radius-sm);
+}
+
+.topic-avatar {
+  padding-right: 0.75rem;
+}
+
+// Images in posts — matches www .screenshot (border, radius, shadow)
+.topic-body .cooked img:not(.emoji):not(.avatar) {
+  border-radius: var(--sparq-radius-lg);
+  box-shadow: var(--sparq-shadow-sm);
+}
+
+// Tables in posts
+.topic-body .cooked table {
+  border: 1px solid var(--sparq-border);
+  border-radius: var(--sparq-radius-md);
+  overflow: hidden;
+}
+
+.topic-body .cooked table th {
+  background: var(--sparq-bg-secondary);
+  font-weight: 600;
+}
+
+.topic-body .cooked table td,
+.topic-body .cooked table th {
+  border-color: var(--sparq-border);
+  padding: 0.5rem 0.75rem;
+}

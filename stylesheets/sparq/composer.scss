@@ -1,0 +1,16 @@
+// sparq/composer.scss — Reply composer styling
+
+#reply-control {
+  border-top: 1px solid var(--sparq-border);
+  box-shadow: var(--shadow-composer);
+  border-radius: var(--sparq-radius-lg) var(--sparq-radius-lg) 0 0;
+
+  .d-editor-textarea-wrapper {
+    border: 1px solid var(--sparq-border);
+    border-radius: var(--sparq-radius-md);
+  }
+
+  .submit-panel .btn-primary {
+    border-radius: var(--sparq-radius-md);
+  }
+}

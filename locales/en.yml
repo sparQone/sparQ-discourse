@@ -1,0 +1,7 @@
+en:
+  theme_metadata:
+    description: "A clean, minimal theme matching the sparQ design system at sparqone.com"
+    settings:
+      sparq_logo: "Upload the sparQ logo for the header"
+      show_footer: "Show the sparQ branded footer with links to sparqone.com"
+      footer_copyright: "Copyright text displayed in the footer"

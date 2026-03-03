@@ -1,0 +1,58 @@
+// sparq/variables.scss — Design tokens bridging sparq-base.css to Discourse
+//
+// sparq-base.css tokens  →  Discourse equivalents
+// --text (#1a1a2e)       →  --primary (from about.json)
+// --bg (#ffffff)          →  --secondary (from about.json)
+// --accent (#3b82f6)      →  --tertiary (from about.json)
+// --accent-hover (#2563eb)→  --quaternary (from about.json)
+// --error (#dc2626)       →  --danger (from about.json)
+// --success (#10b981)     →  --success (from about.json)
+//
+// Only tokens NOT covered by the color scheme live here.
+
+:root {
+  // Backgrounds (sparq-base.css equivalents)
+  --sparq-bg-secondary: #F6F7F9;
+  --sparq-bg-tertiary: #EBEDF0;
+  --sparq-code-bg: #F3F4F6;
+
+  // Border
+  --sparq-border: #e2e0dc;
+
+  // Functional colors not in Discourse color scheme
+  --sparq-warning: #d97706;
+  --sparq-text-muted: #64748b;
+
+  // Radii (matching sparq-base.css)
+  --sparq-radius-sm: 4px;
+  --sparq-radius-md: 6px;
+  --sparq-radius-lg: 8px;
+  --sparq-radius-xl: 12px;
+
+  // Shadows (matching sparq-base.css)
+  --sparq-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --sparq-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  // Typography — system font stack, no external fonts
+  --sparq-font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI",
+    Roboto, sans-serif;
+  --sparq-font-mono: "SF Mono", Monaco, "Cascadia Code", "Fira Code", monospace;
+
+  // ── Discourse variable overrides ──
+
+  // Borders
+  --content-border-color: var(--sparq-border);
+  --input-border-color: var(--sparq-border);
+  --table-border-color: var(--sparq-border);
+
+  // Shadows
+  --shadow-header: none;
+  --shadow-card: var(--sparq-shadow-sm);
+  --shadow-dropdown: var(--sparq-shadow-md);
+  --shadow-menu-panel: var(--sparq-shadow-md);
+  --shadow-composer: 0 -1px 3px rgba(0, 0, 0, 0.08);
+
+  // Code blocks
+  --hljs-bg: var(--sparq-code-bg);
+  --inline-code-bg: var(--sparq-code-bg);
+}

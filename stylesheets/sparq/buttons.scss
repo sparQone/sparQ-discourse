@@ -1,0 +1,27 @@
+// sparq/buttons.scss — Button styling
+// Mirrors: sparq-base.css link colors + www .btn-accent
+
+.btn,
+.btn-default,
+.btn-primary,
+.btn-danger {
+  border-radius: var(--sparq-radius-md);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+// Primary action — matches www .btn-accent
+.btn-primary {
+  background-color: var(--tertiary);
+  border-color: var(--tertiary);
+
+  &:hover {
+    background-color: var(--quaternary);
+    border-color: var(--quaternary);
+  }
+}
+
+// Small / flat buttons
+.btn-small,
+.btn-flat {
+  border-radius: var(--sparq-radius-sm);
+}
