@@ -1,17 +1,42 @@
 // sparq/sidebar.scss — Sidebar links and sections
+// Matches help.sparqone.com sidebar styling
 
 .sidebar-wrapper .sidebar-sections {
-  .sidebar-section-link:hover,
-  .sidebar-section-link.active {
-    background: var(--primary-very-low);
-    border-radius: var(--sparq-radius-md);
+  .sidebar-section-header-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--sparq-text-muted);
   }
 
-  .sidebar-section-header-text {
-    font-weight: 600;
-    font-size: var(--font-down-1);
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    color: var(--sparq-text-muted);
+  .sidebar-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-section-link-wrapper {
+    margin-bottom: 0.25rem;
+  }
+
+  .sidebar-section-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    border-radius: var(--sparq-radius-md);
+    transition: background 0.15s;
+
+    &:hover {
+      background: var(--sparq-bg-secondary);
+      text-decoration: none;
+    }
+
+    &.active {
+      background: var(--tertiary);
+      color: var(--secondary);
+
+      .sidebar-section-link-prefix,
+      .sidebar-section-link-content-text {
+        color: var(--secondary);
+      }
+    }
   }
 }
