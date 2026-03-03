@@ -12,24 +12,22 @@
   max-width: 1100px;
 }
 
-// sparQ wordmark (text styled via api-initializer sparq-wordmark.js)
-.d-header .title a {
-  font-weight: 300;
-  font-size: 2em;
-  letter-spacing: -0.3px;
-  color: #454545;
-}
-
-.d-header .title a .sparq-q {
-  color: #9333ea;
-  font-weight: 500;
-}
-
-// Admin-uploaded logo sizing
+// sparQ logo — uses $sparq_logo theme setting (defaults to bundled asset)
 .d-header #site-logo,
 .d-header .logo-big {
+  content: url($sparq_logo);
   height: 32px;
   width: auto;
+}
+
+// Fallback when no logo image is configured in site settings
+.d-header #site-text-logo {
+  font-size: 0;
+  color: transparent;
+  display: inline-block;
+  background: url($sparq_logo) no-repeat left center / contain;
+  height: 32px;
+  min-width: 120px;
 }
 
 // Sign-up button — matches www .nav-pill (#dbeafe bg, #2563eb text, pill shape)

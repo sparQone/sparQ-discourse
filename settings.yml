@@ -1,6 +1,6 @@
 sparq_logo:
   type: upload
-  default: ""
+  default: "sparq-logo-dark"
   description:
     en: "Upload the sparQ logo for the header"
 
