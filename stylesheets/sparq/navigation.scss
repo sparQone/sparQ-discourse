@@ -21,6 +21,10 @@
   background-color: var(--tertiary);
   color: var(--secondary);
   border-radius: var(--sparq-radius-md);
+
+  &::after {
+    display: none;
+  }
 }
 
 #navigation-bar .nav-pills > li > a {

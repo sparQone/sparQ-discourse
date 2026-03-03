@@ -20,6 +20,21 @@
   width: auto;
 }
 
+// "Forum" label inline with logo (mirrors help.sparqone.com "Help Center")
+.d-header .title a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &::after {
+    content: "Forum";
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--primary-high);
+    white-space: nowrap;
+  }
+}
+
 // Fallback when no logo image is configured in site settings
 .d-header #site-text-logo {
   font-size: 0;
